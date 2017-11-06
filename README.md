@@ -23,4 +23,4 @@
 
 **实验结果**如下（下面两幅图中，‘val’表示交叉验证集，第二行表示网络对于当前图片预测的描述，第三行表示图像原本的描述‘GT：’）：
 
-![Fig1.png](http://upload-images.jianshu.io/upload_images/3970488-3abcafe945ec489d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![Fig.png](http://upload-images.jianshu.io/upload_images/3970488-3abcafe945ec489d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
