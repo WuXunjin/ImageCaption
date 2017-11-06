@@ -16,7 +16,8 @@
 - 再将LSTM/RNN输出层的隐藏状态h用来计算任一样本在每个时刻下对词典中每个单词的得分情况（涉及到将LSTM/RNN的输出转化为单词得分情况的参数W_vocab/b_vocab，需要网络去学习）。
 - 利用SoftMax对上述得分情况计算损失和梯度，最后进行反向传播！  
 
-![原理框图.png](http://upload-images.jianshu.io/upload_images/3970488-93887b61d610a314.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+[1]: ./images/Architecture.png "Architecture"
+
 
 ## 改进RNN/LSTM：
 虽然RNN/LSTM当前时间的状态与之前所有时间的状态都有关，但是当时间较长时，整个网络对前面状态的依赖性会变弱，所以这里为了让图片的描述效果更好，我们在每个时隙都给RNN/LSTM的隐层状态加上图片的卷积提取特征，可以使得整个网络在任何时刻下都可以很清楚的“记住”图片的特征，并能给出更恰当的描述，因此描述的效果会更加出色；
